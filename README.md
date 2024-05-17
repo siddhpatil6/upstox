@@ -1,4 +1,4 @@
-<h1>Forth Code Demo </h1>
+<h1>Upstox Demo </h1>
 Code will show list of coins in recycler view
 API needs to call to fetch list of data consist of coins
 
