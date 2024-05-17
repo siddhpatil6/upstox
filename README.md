@@ -5,9 +5,6 @@ API needs to call to fetch list of data consist of coins
 <h2>Features </h2>
 1. Call API and show list of coins in recyclerview.
 
-<h2>Evidence : </h2> 
-[Crypto.webm](https://github.com/siddhpatil6/Crypto/assets/5618021/d0fb490e-9dac-4b50-96b0-49e95d48ba13)
-
 <h2>Installation </h2>
 Clone the repository: <br>
 git clone https://github.com/siddhpatil6/upstox.git <br>
