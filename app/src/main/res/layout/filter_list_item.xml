@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="filterListItem"
+            type="com.upstox.data.FilterTypeItem" />
+    </data>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@{filterListItem.isSelected ? @drawable/rounded_selected_corner : @drawable/rounded_unselected_corner}"
+    android:padding="5dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="8dp">
+
+    <ImageView
+        android:id="@+id/icFilterType"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@{filterListItem.isSelected ? @drawable/ic_selected : @drawable/ic_unselected}"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtFilterType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:paddingHorizontal="5dp"
+        app:drawableStartCompat="@null"
+        android:text="@{filterListItem.type}"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/icFilterType"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
