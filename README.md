@@ -35,11 +35,6 @@ androidTestImplementation("com.google.dagger:hilt-android-testing:2.51.1")
 kaptAndroidTest("com.google.dagger:hilt-compiler:2.51.1")
 ```
 
-
-<h2>MVVM Architecture:  </h2>
- <br>
-<img width="782" alt="Screenshot 2024-04-18 at 6 55 39 PM" src="https://github.com/siddhpatil6/Crypto/assets/5618021/92acbce2-5a82-4578-a87d-f68e2e2a6596">
-
 View :  MainAcitivity <br>
 ViewModel : CryptoViewModel <br>
 Domain : CryptoUseCase <br>
